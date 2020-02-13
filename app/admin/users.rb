@@ -8,4 +8,8 @@ ActiveAdmin.register User do
     end
     f.actions
   end
+
+  action_item :sms, only: :show do
+    link_to 'Send SMS', new_admin_message_path(receiver_id: user.id)
+  end
 end
