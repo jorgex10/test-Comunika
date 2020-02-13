@@ -39,6 +39,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'activeadmin',  '~> 1.4.0'
 gem 'devise',       '~> 4.6.0'
 
+# Library for communicating with the Twilio REST API
+gem 'twilio-ruby', '~> 5.31', '>= 5.31.4'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
